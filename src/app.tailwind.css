@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+  @apply bg-center bg-cover bg-no-repeat min-h-screen grid place-content-center;
+
+  @media (max-width: 640px) {
+    background-image: url('https://img.freepik.com/premium-photo/composition-garland-with-baubles-copy-space-red-background-christmas-tradition-celebration-concept_13339-323827.jpg');
+  }
+}
+
+input {
+  @apply border border-black px-4 py-2 w-full rounded-md;
+}
+
+button {
+  @apply px-4 py-2 rounded-md font-semibold;
+
+  &.primary {
+    @apply bg-pink-500 text-white;
+  }
+
+  &.danger {
+    @apply bg-red-500 text-white;
+  }
+
+  &.secondary {
+    @apply bg-gray-100 text-black;
+  }
+}
